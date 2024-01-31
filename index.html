@@ -15,12 +15,12 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/instagramclone/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Instagram</title>
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-sm navbar-light border"
+      class="navbar navbar-expand-sm navbar-light border  fixed-top bg-white navbar-h"
     >
       <div class="container">
         <div class="logo">
@@ -40,15 +40,27 @@
                 <span class="navbar-toggler-icon mr-5"></span>
               </button>
             </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse d-flex justify-content-center ml-5">
           <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
             <input
+            id="search"
               class="form-control mr-sm-2 empty"
               type="search"
               placeholder="Ara"
-              style="font-family: Arial, FontAwesome; height: 28px; width: 216px"
+              style="font-family: Arial, FontAwesome; height: 28px; width: 216px;"
               aria-label="Search"
             />
+            <style>
+              #search::placeholder {
+                background: url('assets/search-solid.svg');
+                background-repeat: no-repeat;
+                background-position: 40%;
+                background-size: 6%;
+                text-align: center;
+                font-size: 14px;
+                color: gray;
+              }
+            </style>
           </form>
         </div>
         <div
@@ -91,7 +103,7 @@
         </div>
     </nav>
 
-    <div class="container middlearea">
+    <div class="container middlearea pt-5">
       <div class="row">
         <div class="col-6 offset-3">
           <div class="card">
