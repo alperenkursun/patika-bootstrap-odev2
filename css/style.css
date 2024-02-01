@@ -1,4 +1,6 @@
-
+body{
+  background-color: rgb(245, 245, 245) !important;
+}
 
 input.empty {
     font-family: FontAwesome;
@@ -46,3 +48,8 @@ input.empty {
 .logo{
   margin-left: 192px !important;
 }
+
+.middlearea{
+  max-height: 200px !important;
+}
+
